@@ -24,3 +24,6 @@ Describe hr.DEPARTMENTS;
 
 Select distinct job_id
 from hr.employees;
+
+This is my first Git project.
+Updated on master branch.
