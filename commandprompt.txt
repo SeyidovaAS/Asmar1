@@ -1,0 +1,116 @@
+C:\Users\stsre>cd Documents
+
+C:\Users\stsre\Documents>mkdir git-projects
+
+C:\Users\stsre\Documents>cd git-projects
+
+C:\Users\stsre\Documents\git-projects>type nul > sql.txt
+
+C:\Users\stsre\Documents\git-projects>git init
+Initialized empty Git repository in C:/Users/stsre/Documents/git-projects/.git/
+
+C:\Users\stsre\Documents\git-projects>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sql.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\stsre\Documents\git-projects>git add sql.txt
+
+C:\Users\stsre\Documents\git-projects>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sql.txt
+
+
+C:\Users\stsre\Documents\git-projects>git commit -m "Add sql file"
+[master (root-commit) 216bbf1] Add sql file
+ 1 file changed, 26 insertions(+)
+ create mode 100644 sql.txt
+
+C:\Users\stsre\Documents\git-projects>git branch
+* master
+
+C:\Users\stsre\Documents\git-projects> git checkout -b task1
+Switched to a new branch 'task1'
+
+C:\Users\stsre\Documents\git-projects>git branch
+  master
+* task1
+
+C:\Users\stsre\Documents\git-projects>git remote add origin "https://github.com/SeyidovaAS/Asmar1.git"
+
+C:\Users\stsre\Documents\git-projects>git push origin -u task1
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 428 bytes | 428.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/SeyidovaAS/Asmar1.git
+ * [new branch]      task1 -> task1
+branch 'task1' set up to track 'origin/task1'.
+
+C:\Users\stsre\Documents\git-projects>git checkout master
+Switched to branch 'master'
+
+C:\Users\stsre\Documents\git-projects>git add sql.txt
+
+C:\Users\stsre\Documents\git-projects>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\stsre\Documents\git-projects>git branch
+* master
+  task1
+
+C:\Users\stsre\Documents\git-projects>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\stsre\Documents\git-projects>git commit -m "Add sql file"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\stsre\Documents\git-projects>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   sql.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\stsre\Documents\git-projects>git add sql.txt
+
+C:\Users\stsre\Documents\git-projects>git commit -m "Update sql file on master"
+[master 744146b] Update sql file on master
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\stsre\Documents\git-projects>git push origin -u master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/SeyidovaAS/Asmar1/pull/new/master
+remote:
+To https://github.com/SeyidovaAS/Asmar1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+C:\Users\stsre\Documents\git-projects>git fetch origin
