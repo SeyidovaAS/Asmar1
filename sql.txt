@@ -1,0 +1,26 @@
+select * from hr.EMPLOYEES;
+
+select job_id || ' ' || job_title as "Task1" from hr.JOBS;
+
+select distinct job_id from hr.EMPLOYEES;
+
+select * from hr.DEPARTMENTS;
+
+select employee_id,
+first_name || ' ' || last_name || ' ' || email
+from hr.EMPLOYEES;
+
+Select * from hr.EMPLOYEES;
+
+select first_name as Name,
+last_name as Surname,
+salary * 12 as Annual_Salary
+from hr.EMPLOYEES;
+
+select salary - (salary * COMMISSION_PCT)
+from hr.employees;
+
+Describe hr.DEPARTMENTS;
+
+Select distinct job_id
+from hr.employees;
